@@ -1,0 +1,114 @@
+@@include('header.htm')
+@@include('blocks/navigation-1.htm')
+@@include('blocks/page-header.htm', {"title": "Contact", "prevpage": "Company", "currentpage": "Contact Us"})
+
+<section id="main-container" class="main-container">
+  <div class="container">
+
+    <div class="row text-center">
+      <div class="col-12">
+        <h2 class="section-title">Contactez Notre Bureau</h2>
+        <h3 class="section-sub-title">Trouvez Notre Emplacement</h3>
+      </div>
+    </div>
+    <!--/ Title row end -->
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="ts-service-box-bg text-center h-100">
+          <span class="ts-service-icon icon-round">
+            <i class="fas fa-map-marker-alt mr-0"></i>
+          </span>
+          <div class="ts-service-box-content">
+            <h4>Visitez Notre Bureau</h4>
+            <p>1380 boulevard René-Lévesque Ouest<br>Unit 2303<br>Montréal, QC H3G 0E4</p>
+          </div>
+        </div>
+      </div><!-- Col 1 end -->
+
+      <div class="col-md-4">
+        <div class="ts-service-box-bg text-center h-100">
+          <span class="ts-service-icon icon-round">
+            <i class="fa fa-envelope mr-0"></i>
+          </span>
+          <div class="ts-service-box-content">
+            <h4>Écrivez-nous</h4>
+            <p>bencorenovationconstruction@gmail.com</p>
+          </div>
+        </div>
+      </div><!-- Col 2 end -->
+
+      <div class="col-md-4">
+        <div class="ts-service-box-bg text-center h-100">
+          <span class="ts-service-icon icon-round">
+            <i class="fa fa-phone-square mr-0"></i>
+          </span>
+          <div class="ts-service-box-content">
+            <h4>Appelez-nous</h4>
+            <p>(+514) 629-4483</p>
+          </div>
+        </div>
+      </div><!-- Col 3 end -->
+
+    </div><!-- 1st row end -->
+
+    <div class="gap-60"></div>
+
+    <div class="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.8449344364834!2d-73.57393892341916!3d45.49950997107432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a571c5f7b1b%3A0x2f6b7c1c8f5c8b4a!2s1380%20Ren%C3%A9-L%C3%A9vesque%20Blvd%20W%2C%20Montreal%2C%20QC%20H3G%200E4!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca" 
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="gap-40"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="column-title">Nous aimerions vous entendre</h3>
+        <!-- contact form works with formspree.io  -->
+        <!-- To activate: 1. Go to https://formspree.io/create/bencorenovationconstruction 2. Create account 3. Replace YOUR_FORM_ID below -->
+        <form id="contact-form" action="https://formspree.io/f/xrbrkegj" method="POST" role="form">
+          <div class="error-container"></div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Nom</label>
+                <input class="form-control form-control-name" name="name" id="name" placeholder="Votre nom" type="text" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Courriel</label>
+                <input class="form-control form-control-email" name="email" id="email" placeholder="votre@email.com" type="email" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Sujet</label>
+                <input class="form-control form-control-subject" name="subject" id="subject" placeholder="Sujet de votre message" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-control form-control-message" name="message" id="message" placeholder="Écrivez votre message ici..." rows="10" required></textarea>
+          </div>
+          <!-- Hidden input for spam protection -->
+          <input type="hidden" name="_subject" value="Nouveau message de contact BENCO">
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+          <div class="text-right"><br>
+            <button class="btn btn-primary solid blank" type="submit">Envoyer le Message</button>
+          </div>
+        </form>
+      </div>
+
+    </div><!-- Content row -->
+  </div><!-- Conatiner end -->
+</section><!-- Main container end -->
+
+@@include('footer.htm')
