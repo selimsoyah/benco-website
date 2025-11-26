@@ -106,8 +106,9 @@
     font-size: 20px;
   }
   @include mobile {
-    font-size: 16px;
-    white-space: normal;
+    font-size: 13px;
+    white-space: nowrap;
+    line-height: 1.3;
   }
 }
 
