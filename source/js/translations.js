@@ -399,7 +399,7 @@ function translatePage() {
           return NodeFilter.FILTER_ACCEPT;
         }
         return NodeFilter.FILTER_REJECT;
-      }contact.html
+      }
     }
   );
   
