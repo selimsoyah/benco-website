@@ -54,17 +54,23 @@ FACEBOOK: https://www.facebook.com/themefisher
 
   <style>
     /* Language switcher styles */
+    .top-right-section {
+      display: flex !important;
+      align-items: center;
+      gap: 15px;
+    }
+    
     .language-switcher {
       display: flex;
       align-items: center;
       gap: 5px;
-      margin-left: 15px;
+      margin-left: 0;
     }
     
     .language-switcher button {
-      background: transparent;
-      border: 1px solid rgba(255, 193, 7, 0.5);
-      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(44, 44, 44, 0.3);
+      color: #2c2c2c;
       padding: 5px 12px;
       font-size: 12px;
       font-weight: 600;
@@ -74,18 +80,22 @@ FACEBOOK: https://www.facebook.com/themefisher
       text-transform: uppercase;
     }
     
-    .language-switcher button:hover,
+    .language-switcher button:hover {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: #2c2c2c;
+    }
+    
     .language-switcher button.active {
-      background: #ffc107;
-      color: #2c2c2c;
-      border-color: #ffc107;
+      background: #2c2c2c;
+      color: #ffc107;
+      border-color: #2c2c2c;
     }
     
     /* Mobile styles */
     @media (max-width: 991px) {
       .language-switcher {
-        margin: 15px 20px;
-        justify-content: center;
+        margin-left: 0;
+        margin-top: 10px;
       }
     }
   </style>
