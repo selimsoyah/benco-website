@@ -52,6 +52,47 @@ FACEBOOK: https://www.facebook.com/themefisher
   <!-- Template styles-->
   <link rel="stylesheet" href="css/style.css">
 
+  <style>
+    /* Language switcher styles */
+    .language-switcher {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-left: 15px;
+    }
+    
+    .language-switcher button {
+      background: transparent;
+      border: 1px solid rgba(255, 193, 7, 0.5);
+      color: #fff;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    
+    .language-switcher button:hover,
+    .language-switcher button.active {
+      background: #ffc107;
+      color: #2c2c2c;
+      border-color: #ffc107;
+    }
+    
+    /* Mobile styles */
+    @media (max-width: 991px) {
+      .language-switcher {
+        margin: 15px 20px;
+        justify-content: center;
+      }
+    }
+  </style>
+
 </head>
 <body>
   <div class="body-inner">
+
+  <!-- Translation Script -->
+  <script src="js/translations.js"></script>
